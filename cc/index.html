@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>CC Clears</title>
+	<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+	<header id="topNav">
+		<span id="pageTitle">CC Clears</span>
+		<div class="phase-filter" id="phaseFilter">
+			<button class="phase active" data-group="0">Day 1</button>
+			<button class="phase active" data-group="1">Week 1</button>
+			<button class="phase active" data-group="2">Week 2</button>
+			<button class="phase active" data-group="3">Week 2+</button>
+		</div>
+		<div class="nav-spacer"></div>
+		<div class="count"><span id="clearCount">0</span><span class="count-label">clears</span></div>
+		<a class="btn home" href="../" title="Back to menu">&#8962;</a>
+	</header>
+
+	<div id="opStrip"></div>
+
+	<main id="board"><p class="status">Loading clears&hellip;</p></main>
+
+	<div id="lightbox" class="lightbox" hidden>
+		<button class="lightbox-close" aria-label="Close">&#10005;</button>
+		<img class="lightbox-img" alt="" />
+		<div class="lightbox-meta"></div>
+	</div>
+
+	<script src="../js/clears.js"></script>
+</body>
+</html>

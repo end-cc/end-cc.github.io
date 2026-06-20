@@ -1,0 +1,122 @@
+
+:root {
+	--bg:        #262626;
+	--panel:     #2d2d2d;
+	--panel-2:   #333333;
+	--line:      #1c1c1c;
+	--btn:       #444444;
+	--text:      #d9d9d9;
+	--muted:     #8a8a8a;
+	--accent:    #e0a33d;  /* orange */
+	--day1:      #e0a33d;
+	--week1:     #d8c43a;
+	--week2:     #d8503a;  /* red */
+	--week2p:    #b06cd8;  /* purple */
+	--card-bdr:  #7a3a3a;  /* reddish clear-card border, like akgcc */
+	--sans: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+	--mono: ui-monospace, Consolas, monospace;
+	--card-min: 300px;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 14px; }
+a { color: inherit; text-decoration: none; }
+
+
+.btn {
+	display: inline-flex; align-items: center; gap: 6px;
+	background: var(--btn); color: var(--text);
+	border: 1px solid #111; padding: 4px 10px; cursor: pointer;
+	user-select: none; white-space: nowrap; font-size: 13px;
+}
+.btn:hover { filter: brightness(1.15); }
+
+
+.menu-wrap { max-width: 1200px; margin: 0 auto; padding: 28px 20px 60px; }
+.menu-title {
+	font-size: 26px; font-weight: 800; letter-spacing: .5px;
+	color: #eee; margin: 6px 0 22px;
+	text-shadow: 0 1px 0 #000;
+}
+.tiles { display: flex; flex-wrap: wrap; gap: 16px; }
+.tile { display: flex; flex-direction: column; align-items: center; gap: 8px; width: 116px; }
+.tile-icon {
+	width: 96px; height: 96px; background: #222;
+	border: 1px solid #111; box-shadow: 1pt 1pt 2pt 2pt #111;
+	display: grid; place-items: center; overflow: hidden;
+	transition: transform .1s ease, box-shadow .1s ease;
+}
+.tile:hover .tile-icon { transform: translateY(-2px); box-shadow: 0 0 0 2px var(--accent), 1pt 1pt 2pt 2pt #111; }
+.tile-icon img { width: 100%; height: 100%; object-fit: cover; }
+.tile-name { font-weight: 700; color: whitesmoke; letter-spacing: .5px; }
+.tile.disabled { opacity: .35; pointer-events: none; }
+
+
+#topNav {
+	position: sticky; top: 0; z-index: 30;
+	display: flex; align-items: center; gap: 10px;
+	padding: 8px 14px; background: var(--panel); border-bottom: 1px solid var(--line);
+	flex-wrap: wrap;
+}
+#pageTitle { font-size: 18px; font-weight: 800; color: #eee; margin-right: 6px; }
+.phase-filter { display: flex; gap: 6px; }
+.phase {
+	background: transparent; border: 1px solid currentColor; color: var(--muted);
+	padding: 3px 10px; cursor: pointer; font-size: 12px; font-weight: 700;
+}
+.phase[data-group="0"].active { color: #1a1a1a; background: var(--day1);  border-color: var(--day1); }
+.phase[data-group="1"].active { color: #1a1a1a; background: var(--week1); border-color: var(--week1); }
+.phase[data-group="2"].active { color: #1a1a1a; background: var(--week2); border-color: var(--week2); }
+.phase[data-group="3"].active { color: #1a1a1a; background: var(--week2p);border-color: var(--week2p); }
+.phase.active { /* fallback */ }
+.phase:not(.active) { color: var(--muted); }
+.nav-spacer { flex: 1 1 auto; }
+.count { font-family: var(--mono); color: var(--accent); }
+.count-label { color: var(--muted); margin-left: 4px; font-size: 12px; }
+.home { font-size: 16px; }
+
+
+#opStrip {
+	display: flex; flex-wrap: wrap; gap: 4px;
+	padding: 8px 14px; background: var(--panel-2); border-bottom: 1px solid var(--line);
+}
+.op-chip {
+	display: inline-flex; align-items: center; gap: 4px;
+	background: #3a3a3a; border: 1px solid #111; color: var(--text);
+	padding: 2px 7px; font-size: 11px; cursor: pointer; user-select: none;
+}
+.op-chip img { width: 16px; height: 16px; object-fit: cover; }
+.op-chip:hover { filter: brightness(1.2); }
+.op-chip.active { background: var(--accent); color: #1a1a1a; border-color: var(--accent); }
+.op-strip-hint { color: var(--muted); font-size: 11px; align-self: center; margin-left: 6px; }
+
+
+#board { padding: 6px 14px 60px; }
+.status { color: var(--muted); padding: 40px 4px; font-family: var(--mono); }
+.risk-section { margin-top: 18px; scroll-margin-top: 96px; }
+.risk-header {
+	font-size: 22px; font-weight: 800; color: #b9b9b9; letter-spacing: 1px;
+	padding: 4px 0 8px; border-bottom: 1px solid #1c1c1c; margin-bottom: 12px;
+}
+.risk-header .rc { font-size: 12px; color: var(--muted); font-weight: 600; margin-left: 10px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--card-min), 1fr)); gap: 12px; }
+.card { background: var(--panel); border: 1px solid var(--card-bdr); display: flex; flex-direction: column; }
+.card-thumb { aspect-ratio: 16 / 9; background: #1a1a1a; cursor: zoom-in; overflow: hidden; position: relative; }
+.card-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.card-thumb.broken::after { content: "no image"; position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); font-family: var(--mono); font-size: 12px; }
+.card-body { padding: 8px 9px; display: flex; flex-direction: column; gap: 7px; }
+.ops { display: flex; flex-wrap: wrap; gap: 3px; }
+.op { font-family: var(--mono); font-size: 11px; background: var(--panel-2); border: 1px solid var(--line); padding: 1px 5px; }
+.card-foot { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.card-foot .phase-dot { width: 8px; height: 8px; display: inline-block; margin-right: 5px; }
+
+
+.lightbox { position: fixed; inset: 0; z-index: 50; background: rgba(10,10,10,.93); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; }
+.lightbox[hidden] { display: none; }
+.lightbox-img { max-width: 95vw; max-height: 82vh; object-fit: contain; border: 1px solid #111; }
+.lightbox-meta { font-family: var(--mono); font-size: 13px; color: var(--muted); text-align: center; }
+.lightbox-close { position: absolute; top: 16px; right: 20px; font-size: 20px; color: var(--text); background: var(--panel-2); border: 1px solid #111; padding: 6px 11px; cursor: pointer; }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 560px){ :root{ --card-min: 100%; } #pageTitle{ font-size:15px; } }
+@media (prefers-reduced-motion: reduce){ .tile-icon{ transition:none; } }

@@ -1,0 +1,184 @@
+{
+	"CCEFB1.png": {
+		"risk": 45,
+		"group": 0,
+		"squad": [
+			{
+				"name": "Estella"
+			},
+			{
+				"name": "Tangtang"
+			},
+			{
+				"name": "Wulfgard"
+			},
+			{
+				"name": "Gilberta"
+			}
+		],
+		"tag": "-CCEFB",
+		"submitter": "Anon",
+		"date": "2026-06-19"
+	},
+	"CCEFB2.png":  {
+		"risk": 35,
+		"group": 0,
+		"squad": [
+			{
+				"name": "Zhuang Fangyi"
+			},
+			{
+				"name": "Perlica"
+			},
+			{
+				"name": "Arclight"
+			},
+			{
+				"name": "Akekuri"
+			}
+		],
+		"tag": "-CCEFB",
+		"submitter": "Anon",
+		"date": "2026-06-19"
+	},
+	"CCEFB3.png": {
+		"risk": 23,
+		"group": 0,
+		"squad": [
+			{
+				"name": "Endministrator"
+			},
+			{
+				"name": "Chen"
+			},
+			{
+				"name": "Snowshine"
+			},
+			{
+				"name": "Akekuri"
+			}
+		],
+		"tag": "-CCEFB",
+		"submitter": "Anon",
+		"date": "2026-06-19"
+	},
+	"CCEFB4.jpg": {
+		"risk": 3,
+		"group": 0,
+		"squad": [
+			{
+				"name": "Mi Fu"
+			},
+			{
+				"name": "Ember"
+			},
+			{
+				"name": "Rossi"
+			},
+			{
+				"name": "Tangtang"
+			}
+		],
+		"tag": "-CCEFB",
+		"submitter": "Anon",
+		"date": "2026-06-19"
+	},
+	"CCEFB5.png": {
+		"risk": 35,
+		"group": 0,
+		"squad": [
+			{
+				"name": "Perlica"
+			},
+			{
+				"name": "Wulfgard"
+			},
+			{
+				"name": "Laevatain"
+			},
+			{
+				"name": "Ardelia"
+			}
+		],
+		"tag": "-CCEFB",
+		"submitter": "Anon",
+		"date": "2026-06-19"
+	},
+	"CCEFB6.png": {
+		"risk": 26,
+		"group": 0,
+		"squad": [
+			{
+				"name": "Perlica"
+			},
+			{
+				"name": "Avywenna"
+			},
+			{
+				"name": "Arclight"
+			},
+			{
+				"name": "Gilberta"
+			}
+		],
+		"tag": "-CCEFB",
+		"submitter": "Anon",
+		"date": "2026-06-19"
+	},
+	"CCEFB7.png": {
+		"risk": 33,
+		"group": 0,
+		"squad": [
+			{
+				"name": "Estella"
+			},
+			{
+				"name": "Rossi"
+			},
+			{
+				"name": "Perlica"
+			},
+			{
+				"name": "Gilberta"
+			}
+		],
+		"tag": "-CCEFB",
+		"submitter": "Anon",
+		"date": "2026-06-19"
+	},
+	"CCEFB8.jpg": {
+		"risk": 35,
+		"group": 0,
+		"squad": [
+			{
+				"name": "Laevatain"
+			},
+			{
+				"name": "Ardelia"
+			},
+			{
+				"name": "Akekuri"
+			},
+			{
+				"name": "Wulfgard"
+			}
+
+		],
+		"tag": "-CCEFB",
+		"submitter": "Anon",
+		"date": "2026-06-19"
+	},
+
+	"CCEFB9.png": {
+		"risk": 1,
+		"group": 0,
+		"squad": [
+			{
+				"name": "Ember"
+			}
+		],
+		"tag": "-CCEFB",
+		"submitter": "Anon",
+		"date": "2026-06-19"
+	}
+}
