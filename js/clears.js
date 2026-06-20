@@ -1,4 +1,3 @@
-
 const THUMB_DIR = "../thumbs/";
 const FULL_DIR  = "../full/";
 const PHASE_NAMES = ["Day 1", "Week 1", "Week 2", "Week 2+"];
@@ -19,6 +18,11 @@ const lbMeta = lightbox.querySelector(".lightbox-meta");
 let entries = [];
 const activePhases = new Set([0, 1, 2, 3]);
 const activeOps = new Set();
+
+// operator name -> icon filename: "Da Pan" -> icons/ops/Da_Pan_Banner.webp
+function opIcon(name) {
+	return "../icons/ops/" + encodeURIComponent(name.replace(/ /g, "_") + "_Banner.webp");
+}
 
 init();
 
@@ -67,8 +71,9 @@ function buildOpStrip() {
 	opStrip.innerHTML = "";
 	for (const name of all) {
 		const chip = document.createElement("span");
+		chip.className = "op-chip";
 		const img = document.createElement("img");
-		img.src = `../icons/ops/${encodeURIComponent(name)}.webp`;
+		img.src = opIcon(name);
 		img.alt = "";
 		img.addEventListener("error", () => img.remove());   // no icon yet -> name only
 		const label = document.createElement("span");
@@ -145,15 +150,11 @@ function card(e) {
 		const ops = document.createElement("div");
 		ops.className = "ops";
 		e.squad.forEach(n => {
-		const s = document.createElement("span");
-		s.className = "op";
-		const img = document.createElement("img");
-		img.src = `../icons/ops/${encodeURIComponent(n)}.webp`;
-		img.alt = "";
-		img.addEventListener("error", () => img.remove());
-		s.append(img, document.createTextNode(n));
-		ops.appendChild(s);
-	});
+			const s = document.createElement("span");
+			s.className = "op";
+			s.textContent = n;
+			ops.appendChild(s);
+		});
 		body.appendChild(ops);
 	}
 	const foot = document.createElement("div");
