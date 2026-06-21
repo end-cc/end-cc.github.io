@@ -17,7 +17,8 @@ const lbMeta = lightbox.querySelector(".lightbox-meta");
 
 let entries = [];
 const activePhases = new Set([0, 1, 2, 3]);
-const activeOps = new Set();
+const requireOps = new Set();   // a clear must INCLUDE every operator in here
+const excludeOps = new Set();   // a clear must NOT include any operator in here
 
 // operator name -> icon filename: "Da Pan" -> icons/ops/Da_Pan_Banner.webp
 function opIcon(name) {
@@ -62,7 +63,8 @@ async function init() {
 function filtered() {
 	return entries.filter(e =>
 		activePhases.has(e.group) &&
-		(activeOps.size === 0 || [...activeOps].every(op => e.squad.includes(op)))
+		[...requireOps].every(op => e.squad.includes(op)) &&
+		[...excludeOps].every(op => !e.squad.includes(op))
 	);
 }
 
@@ -80,15 +82,25 @@ function buildOpStrip() {
 		label.textContent = name;
 		chip.append(img, label);
 		chip.addEventListener("click", () => {
-			chip.classList.toggle("active");
-			if (activeOps.has(name)) activeOps.delete(name); else activeOps.add(name);
+			if (requireOps.has(name)) {            // include -> exclude
+				requireOps.delete(name);
+				excludeOps.add(name);
+				chip.classList.remove("active");
+				chip.classList.add("exclude");
+			} else if (excludeOps.has(name)) {     // exclude -> off
+				excludeOps.delete(name);
+				chip.classList.remove("exclude");
+			} else {                               // off -> include
+				requireOps.add(name);
+				chip.classList.add("active");
+			}
 			render();
 		});
 		opStrip.appendChild(chip);
 	}
 	const hint = document.createElement("span");
 	hint.className = "op-strip-hint";
-	hint.textContent = "click operators to filter (shows clears using all selected)";
+	hint.textContent = "click an operator: once = must include, twice = must exclude, again = clear";
 	opStrip.appendChild(hint);
 }
 
