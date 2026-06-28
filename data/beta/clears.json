@@ -2920,5 +2920,26 @@
     "tag": "-CCEFB",
     "submitter": "Anon",
     "date": "2026-06-28"
+  },
+  "avyclear_CCEFB.jpg": {
+    "risk": 35,
+    "group": 1,
+    "squad": [
+      {
+        "name": "Avywenna"
+      },
+      {
+        "name": "Perlica"
+      },
+      {
+        "name": "Arclight"
+      },
+      {
+        "name": "Xaihi"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-06-28"
   }
 }
