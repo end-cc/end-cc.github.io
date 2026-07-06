@@ -2921,9 +2921,114 @@
     "submitter": "Anon",
     "date": "2026-06-28"
   },
+  "08G06J9R794A08J_-CCEFB.png": {
+    "risk": 42,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Camille"
+      },
+      {
+        "name": "Mi Fu"
+      },
+      {
+        "name": "Rossi"
+      },
+      {
+        "name": "Estella"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "2026-06-28_CC_risk_40_-CCEFB.jpg": {
+    "risk": 40,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Rossi"
+      },
+      {
+        "name": "Chen Qianyu"
+      },
+      {
+        "name": "Mi Fu"
+      },
+      {
+        "name": "Ember"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "23856-CCEFB.png": {
+    "risk": 52,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Estella"
+      },
+      {
+        "name": "Tangtang"
+      },
+      {
+        "name": "Wulfgard"
+      },
+      {
+        "name": "Laevatain"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "47-CCEFB.png": {
+    "risk": 47,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Estella"
+      },
+      {
+        "name": "Tangtang"
+      },
+      {
+        "name": "Wulfgard"
+      },
+      {
+        "name": "Laevatain"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "51antalardellia-CCEFB.png": {
+    "risk": 51,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Antal"
+      },
+      {
+        "name": "Ardelia"
+      },
+      {
+        "name": "Wulfgard"
+      },
+      {
+        "name": "Gilberta"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
   "avyclear_CCEFB.jpg": {
     "risk": 35,
-    "group": 1,
+    "group": 2,
     "squad": [
       {
         "name": "Avywenna"
@@ -2940,6 +3045,258 @@
     ],
     "tag": "-CCEFB",
     "submitter": "Anon",
-    "date": "2026-06-28"
+    "date": "2026-07-06"
+  },
+  "babyclear-CCEFB.png": {
+    "risk": 44,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Rossi"
+      },
+      {
+        "name": "Mi Fu"
+      },
+      {
+        "name": "Snowshine"
+      },
+      {
+        "name": "Ember"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "basedstella-CCEFB.jpg": {
+    "risk": 20,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Estella"
+      },
+      {
+        "name": "Gilberta"
+      },
+      {
+        "name": "Tangtang"
+      },
+      {
+        "name": "Rossi"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "Ember_risk_43-CCEFB.png": {
+    "risk": 43,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Rossi"
+      },
+      {
+        "name": "Chen Qianyu"
+      },
+      {
+        "name": "Mi Fu"
+      },
+      {
+        "name": "Ember"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "ENDFIELD_SHARE_1782877379-CCEFB.png": {
+    "risk": 35,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Rossi"
+      },
+      {
+        "name": "Gilberta"
+      },
+      {
+        "name": "Tangtang"
+      },
+      {
+        "name": "Perlica"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "image225_-CCEFB.png": {
+    "risk": 50,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Estella"
+      },
+      {
+        "name": "Wulfgard"
+      },
+      {
+        "name": "Rossi"
+      },
+      {
+        "name": "Gilberta"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "itsover3-CCEFB.png": {
+    "risk": 46,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Chen Qianyu"
+      },
+      {
+        "name": "Mi Fu"
+      },
+      {
+        "name": "Pogranichnik"
+      },
+      {
+        "name": "Lifeng"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "mycc42-CCEFB.png": {
+    "risk": 42,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Endministrator"
+      },
+      {
+        "name": "Perlica"
+      },
+      {
+        "name": "Chen Qianyu"
+      },
+      {
+        "name": "Gilberta"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "r52w2-CCEFB.png": {
+    "risk": 52,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Perlica"
+      },
+      {
+        "name": "Tangtang"
+      },
+      {
+        "name": "Wulfgard"
+      },
+      {
+        "name": "Laevatain"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "RossiTTCombo47-CCEFB.jpg": {
+    "risk": 47,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Rossi"
+      },
+      {
+        "name": "Perlica"
+      },
+      {
+        "name": "Tangtang"
+      },
+      {
+        "name": "Gilberta"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "RossiTTCombo48-CCEFB.jpg": {
+    "risk": 48,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Tangtang"
+      },
+      {
+        "name": "Perlica"
+      },
+      {
+        "name": "Gilberta"
+      },
+      {
+        "name": "Rossi"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "RWC3-CCEFB.png": {
+    "risk": 48,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Akekuri"
+      },
+      {
+        "name": "Laevatain"
+      },
+      {
+        "name": "Rossi"
+      },
+      {
+        "name": "Gilberta"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
+  },
+  "zfylove-CCEFB.png": {
+    "risk": 50,
+    "group": 2,
+    "squad": [
+      {
+        "name": "Arclight"
+      },
+      {
+        "name": "Zhuang Fangyi"
+      },
+      {
+        "name": "Perlica"
+      },
+      {
+        "name": "Gilberta"
+      }
+    ],
+    "tag": "-CCEFB",
+    "submitter": "Anon",
+    "date": "2026-07-06"
   }
 }
