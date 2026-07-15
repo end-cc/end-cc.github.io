@@ -1,2 +1,2 @@
 Endfield CC
-Based on /akg/ CC website.
+Based on /akg/ CC website
