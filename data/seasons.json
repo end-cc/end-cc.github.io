@@ -3,6 +3,13 @@
 		"id": "beta",
 		"label": "β",
 		"title": "Re-Ignition Experimental Operation",
-		"icon": "icons/beta.webp"
+		"icon": "icons/beta1.webp"
+	},
+
+	{ 
+		"id": "indigo", 
+		"label": "β2", 
+		"title": "Indigo Experimental Operation",
+		"icon": "icons/beta2.webp" 
 	}
 ]

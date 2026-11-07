@@ -1,0 +1,15 @@
+# --- core (required) ---
+Pillow
+numpy
+pytesseract        # also install the engine itself:
+                   #   Ubuntu/Debian:  apt install tesseract-ocr
+                   #   macOS (brew):   brew install tesseract
+                   #   Windows:        https://github.com/UB-Mannheim/tesseract/wiki
+
+# --- phash backend (light, the default fallback) ---
+imagehash
+
+# --- clip backend (best face accuracy) — optional ---
+# Uncomment if you want CLIP matching (recommended for real reference art):
+# torch
+# open_clip_torch
